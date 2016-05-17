@@ -1,7 +1,7 @@
 <?php
         $postData       = filter_input_array(INPUT_POST);
         
-        $validClients   = ['elixir.com','aandb.xyz','asl.net.in','ccsahaltd.com'];
+        $validClients   = ['elixir.com','aandb.xyz','asl.net.in','ccsahaltd.com',];
         
         if ( !empty($postData) && 
              in_array($postData['site'], $validClients) && 
@@ -95,7 +95,8 @@
                                             ['onlinecampaign@asl.net.in','Online Campaigns'],
                                             ['project.info@asl.net.in','Project Info'],
                                         ],
-                        'ccsahaltd.com'=>[ 
+
+                        'ccsahaltd.com' =>[ 
                                             ['himanshu@aandb.xyz','Himanshu Singh Gurjar'],
                                             ['vikramsaha@gmail.com','Vikram Saha'],
                                         ],
@@ -111,8 +112,8 @@
                 $bcc = [
                         'lernr.com' => [       
                                                 //'alok@aandb.xyz',
-                                                ["alok@aandb.xyz" , "Alok Shenoy"],
-                                                ["himanshu@aandb.xyz" , "Himanshu Singh Gurjar"],
+                                                ['alok@aandb.xyz' , 'Alok Shenoy'],
+                                                ['himanshu@aandb.xyz' , 'Himanshu Singh Gurjar'],
                                         ],
                 ];
                 
@@ -121,7 +122,7 @@
                         'elixir.com' => "You have an enquiry on Elixirholisticconsultancy.com",
                         'aandb.xyz'=> "You have an enquiry on the website",
                         'asl.net.in' => "Lead for Arihant",
-                        'ccsahaltd.com'=>"You have an enquiry on ccsahaltd.com",
+                        'ccsahaltd.com'=> "You have an enquiry on ccsahaltd.com",
                 ];
                 
                 require_once '../lib/phpmailer/PHPMailerAutoload.php';

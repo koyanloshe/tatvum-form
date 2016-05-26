@@ -91,7 +91,7 @@
                                         ],
                                         
                         'asl.net.in' => [
-                                            ['alok@aandb.xyz','Alok Shenoy'],
+                                            ['koyanloshe@gmail.com','Alok Shenoy'],
                                             ['onlinecampaign@asl.net.in','Online Campaigns'],
                                             ['project.info@asl.net.in','Project Info'],
                                             ['lalit@aandb.xyz','Lalit Patel'],
